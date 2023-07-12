@@ -1,0 +1,49 @@
+header: "ID"  # If set, the script will find this "header row" and start parsing from the next line
+excludes: ["L"]  # These columns will not be validated
+#range: ["A","D"]
+#this option set range of columns which should be process for validation.
+#In this case form A (included) to D (included)
+#range and excludes options can be used together
+
+validators:
+
+    default:
+        - NotBlank:
+            message: Value can not be blank
+columns:
+  A:
+    - NotBlank:
+        message: Value cannot be blank
+
+  B:
+    - Conditional:
+        message: "Column C required"
+        fieldB: "C"
+        operator: "lambda b, c: (False if (b != 95 and c != None) else True)"
+        trim: true
+    - Length:
+        max: 3
+        maxMessage: Value is too long
+    - NotBlank:
+        message: Value cannot be blank
+
+  C:
+    - Length:
+        min: 3
+        minMessage: Value is too short
+
+  D:
+    - Length:
+        min: 3
+        minMessage: Value is too short
+
+  E:
+    - NotBlank:
+        message: Required field
+
+  F:
+    - Regex:
+        pattern: "\\bTIBCO\\b"
+        message: Value must be TIBCO
+    - NotBlank:
+        message: Required field
