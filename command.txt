@@ -1,1 +1,3 @@
  python excel_validator.py "test.yml" Dummy_DV_sheet.xlsx "Sheet1" "/tmp" --errors=true
+ python excel_validator.py "test.yml" 2763201_WOTSK_STATUS_UPDATE.xlsx "Sheet1" "/tmp" --errors=true
+ python excel_validator.py "test.yml" WOTSK.xlsx "Sheet1" "/tmp" --errors=true
