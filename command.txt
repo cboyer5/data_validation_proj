@@ -2,3 +2,4 @@
  python excel_validator.py "test2.yml" 2763201_WOTSK_STATUS_UPDATE.xlsx "Sheet1" "/tmp" --errors=true
  python excel_validator.py "test2.yml" WOTSK.xlsx "Sheet1" "/tmp" --errors=true
  python excel_validator.py "test2.yml" Code_test_WOTSK_STATUS_UPDATE.xlsx "Sheet1" "/tmp" --errors=true
+ python excel_validator.py "test2.yml" Code_test.xlsx "Sheet1" "/tmp" --errors=true
