@@ -1,12 +1,4 @@
 
-
- python excel_validator.py "Test2.yml" WOTSK.xlsx "Sheet1" "/tmp" --errors=true
- python excel_validator.py "Test2.yml" Code_test_WOTSK_STATUS_UPDATE.xlsx "Sheet1" "/tmp" --errors=true
- python excel_validator.py "Test2.yml" Code_test.xlsx "Sheet1" "/tmp" --errors=true
-python excel_validator.py "Test2.yml" Code_test.xlsx "Sheet1" "/tmp" --errors=true
-
-
-
 --DEMO--
  python excel_validator.py "Test2.yml" Code_test2.xlsx "Sheet1" "/tmp" --errors=true
  python excel_validator.py "Test2.yml" 2763201_WOTSK_STATUS_UPDATE.xlsx "Sheet1" "/tmp" --errors=true
@@ -21,4 +13,4 @@ python excel_validator.py "Test2.yml" .../Desktop/Data_validation_code/Code_test
 
 
 
-C:\Users\E187276\OneDrive - Exelon\Desktop\Data_validation_code
+Current directory :  C:\Users\E187276\OneDrive - Exelon\Desktop\Data_validation_code
