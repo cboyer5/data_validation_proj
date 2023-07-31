@@ -1,0 +1,21 @@
+
+USER GUIDE
+
+Installation: 
+Users must have version 3.10 or later of python installed on their machines. Additionally, the program can be run within a python IDE. Visual studio code has a suitable development environment for utilization of the tool. Within the visual studio environment, it provides a PowerShell terminal under tools > command line. This can be utilized as an alternative to the command prompt (cmd) which can also be used to run the script as well. 
+
+Configuration:  
+All custom validator files, YAML files, Spreadsheets and python code must be saved within the same folder along with a temporary directory folder to save the spreadsheets with marked error cells. 
+Beware of the strict syntax and indentation rules for which yaml files follow. Improper indentation can result in errors and broken code.
+
+Utilization:  To Utilize the tool, 
+1st: CD into the folder/file path where all of the files are saved.
+2nd: paste in or type the 5 required arguments.
+1)	Python excel validator file (ex: python excel_validator.py)
+2)	YAML config file (ex: Equiptment_validation.yml)
+3)	Spreadsheet name (ex: 2747663_EQUIPMENT.xlsx)
+4)	Sheet name (ex: Sheet1)
+5)	File path to temporary directory (ex: C:\Users\E187276\OneDrive - Exelon\Desktop\Data_validation_code\tmp)
+**The YAML file, sheet name and file path must be enclosed in double quotes
+There is a 6th optional argument: (--errors=true) adding this argument will show a description of the errors in the terminal after the script is ran. Running the script without the argument outputs a marked spreadsheet with highlighted red cells but no description of the errors. 
+
